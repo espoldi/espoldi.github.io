@@ -17,6 +17,8 @@
 ## Credits
 
 * [Bootstrap](https://getbootstrap.com/)
+* [w3schools](https://www.w3schools.com/)
+* [placeholder](https://placeholder.com/)
 
 ## License
 
