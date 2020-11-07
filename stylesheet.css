@@ -18,3 +18,7 @@ footer {
     border-top: 5px solid teal;
     padding: 2em;
 }
+
+.img-fluid {
+    margin: 3px;
+}
