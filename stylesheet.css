@@ -9,16 +9,20 @@ h1 {
 
 article {
     background-color: white;
-    margin-top: 8em;
+    margin-top: 5em;
     margin-bottom: 8em;
     border: 5px solid transparent;
     border-radius: 15px;
 }
 
-footer {
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: gray;
     border-top: 5px solid teal;
     padding: 2em;
+    text-align: center;
 }
 
 .img-fluid {
