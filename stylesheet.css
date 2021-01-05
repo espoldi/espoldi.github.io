@@ -2,9 +2,10 @@ body {
     background-image: url("assets/images/backdrop.jpg");
 }
 
-h1 {
-    color: teal;
-    font-family: "Bookman", serif;
+h1, h2, h3, h4 {
+    color: rgb(57, 0, 148);
+    font-family: "Pompiere", serif;
+    font-weight: bold;
 }
 
 article {
