@@ -9,11 +9,23 @@ h1, h2, h3, h4 {
 }
 
 article {
+    float: left;
     background-color: white;
     margin-top: 5em;
-    margin-bottom: 8em;
     border: 5px solid transparent;
     border-radius: 15px;
+}
+
+aside {
+    float: right;
+    background-color: white;
+    margin-top: 5em;
+    border: 5px solid transparent;
+    border-radius: 15px;
+}
+
+i {
+    font-size: 20px;
 }
 
 .footer {
