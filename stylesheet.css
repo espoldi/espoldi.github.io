@@ -27,8 +27,9 @@ aside {
     border-radius: 15px;
 }
 
-i {
+.fab, .fas, i {
     font-size: 26px;
+    margin: 0.5rem;
 }
 
 .footer {
