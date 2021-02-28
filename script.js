@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var chipInterest = document.querySelectorAll('.chips');
     M.Chips.init(chipInterest, {});
 
-    // Carousel Activation
-    var spinFolio = document.querySelectorAll('.carousel');
-    M.Carousel.init(spinFolio, {});
+    // Scrollspy Activation
+    var scrollFolio = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(scrollFolio, {});
 });

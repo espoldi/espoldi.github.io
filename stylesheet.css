@@ -19,7 +19,7 @@ header, main, footer {
     margin: 0.5rem;
 }
 
-main {
+.row {
     background-color: white;
     border-radius: 1rem;
 }
