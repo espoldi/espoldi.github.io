@@ -7,5 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Side Navbar Collapsible Activation
     var sideCollapse = document.querySelectorAll('.collapsible');
     M.Collapsible.init(sideCollapse, {});
-    
+
+    // Chips Activation
+    var chipInterest = document.querySelectorAll('.chips');
+    M.Chips.init(chipInterest, {});
 });
