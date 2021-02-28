@@ -19,9 +19,7 @@ header, main, footer {
     margin: 0.5rem;
 }
 
-.img-fluid {
-    margin: 5px;
-    margin-bottom: 20px;
-    border: 5px solid black;
-    border-radius: 5px;
+main {
+    background-color: white;
+    border-radius: 1rem;
 }
