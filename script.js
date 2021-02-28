@@ -1,4 +1,4 @@
-$(document).ready(function () {
-    const navSmall = $(".sidenav");
-    M.Sidenav.init(navSmall, {});
+document.addEventListener('DOMContentLoaded', function () {
+    const slideMenu = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(slideMenu, {});
 });
