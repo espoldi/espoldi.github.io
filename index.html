@@ -26,17 +26,10 @@
 <body>
   <!--Navigation Bar-->
   <header>
-    <nav class="navbar-fixed nav-extended grey darken-4">
-      <div class="nav-wrapper">
+    <nav>
+      <div class="nav-wrapper grey darken-4">
         <a href="#" class="brand-logo center">My Portfolio</a>
-        <a href="#" class="sidenav-trigger" data-target="slide-out"><i class="material-icons">account_circle</i></a>
-      </div>
-      <div class="nav-content">
-        <ul class="tabs grey darken-3">
-          <li class="tab"><a href="#recipeShopper">Recipe Shopper</a></li>
-          <li class="tab"><a href="#weatherForcast">Weather Forcast App</a></li>
-          <li class="tab"><a href="#popQuiz">Javascript Pop Quiz</a></li>
-        </ul>
+        <a href="#" class="sidenav-trigger" data-target="slide-out"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </header>
@@ -56,6 +49,13 @@
         <a href="https://www.github.com/espoldi"><i class="fab fa-github-square"></i> Github</a>
         <a>Copyright &copy; 2021 Emily Spoldi</a>
       </div>
+    </li>
+    <li>
+      <ul>
+        <li class="tab"><a href="#recipeShopper">Recipe Shopper</a></li>
+        <li class="tab"><a href="#weatherForcast">Weather Forcast App</a></li>
+        <li class="tab"><a href="#popQuiz">Javascript Pop Quiz</a></li>
+      </ul>
     </li>
     <li>
       <div class="divider"></div>
@@ -84,39 +84,6 @@
                 <br><br>
               </form>
             </span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">short_text</i>Bio</div>
-          <div class="collapsible-body">
-            <span>
-              <p>My name is Emily Spoldi. I am 28 years old and programming has had a heavy influence on my life since I
-                was little. My parents are both software engineers so technical jargon was common at the dinner table. I
-                was
-                the only one in my immediate family who decided to do something other than programming when deciding on
-                college majors... UNTIL NOW!<br>
-                <br>
-                I have spent a few years working with different schools and programs using what I have taught myself or
-                remember from my classes at SCSU and high school robotics team. Now, I am well on my way to making the
-                world a
-                better formatted place. Having grown up in an era where technology was evolving quickly has given me the
-                ability to use some systems without much experience.
-              </p>
-            </span>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">bubble_chart</i>Interests</div>
-          <div class="collapsible-body">
-            <span>
-              <div class="chip"><img src="assets/images/icons/role-playing.png">D&D</div>
-              <div class="chip"><img src="assets/images/icons/game-controller.png">Gaming</div>
-              <div class="chip"><img src="assets/images/icons/cd.png">Music</div>
-              <div class="chip"><img src="assets/images/icons/books.png">Reading</div>
-              <div class="chip"><img src="assets/images/icons/groceries.png">Cooking</div>
-              <div class="chip"><img src="assets/images/icons/sale.png">Shopping</div>
-              <div class="chip"><img src="assets/images/icons/button.png">DIY Projects</div>
-            </span>
-          </div>
         </li>
       </ul>
     </li>
@@ -179,6 +146,53 @@
       </div>
     </div>
   </main>
+
+  <!-- Floating Button for more information -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red"><i class="material-icons">account_circle</i></a>
+    <ul>
+      <li><a class="btn-floating red modal-trigger" data-target="interests"><i class="material-icons">bubble_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1 modal-trigger" data-target="bio"><i class="material-icons">short_text</i>Bio</a></li>
+    </ul>
+  </div>
+
+  <!-- Modals of extra information -->
+  <div id="interests" class="modal">
+    <div class="modal-content">
+      <h4>Interests</h4>
+      <div class="chip"><img src="assets/images/icons/role-playing.png">D&D</div>
+      <div class="chip"><img src="assets/images/icons/game-controller.png">Gaming</div>
+      <div class="chip"><img src="assets/images/icons/cd.png">Music</div>
+      <div class="chip"><img src="assets/images/icons/books.png">Reading</div>
+      <div class="chip"><img src="assets/images/icons/groceries.png">Cooking</div>
+      <div class="chip"><img src="assets/images/icons/sale.png">Shopping</div>
+      <div class="chip"><img src="assets/images/icons/button.png">DIY Projects</div>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-close waves-effect waves-green btn blue">Ok</a>
+    </div>
+  </div>
+
+  <div id="bio" class="modal">
+    <div class="modal-content">
+      <h4>Bio</h4>
+      <p>My name is Emily Spoldi. I am 28 years old and programming has had a heavy influence on my life since I
+        was little. My parents are both software engineers so technical jargon was common at the dinner table. I
+        was
+        the only one in my immediate family who decided to do something other than programming when deciding on
+        college majors... UNTIL NOW!<br>
+        <br>
+        I have spent a few years working with different schools and programs using what I have taught myself or
+        remember from my classes at SCSU and high school robotics team. Now, I am well on my way to making the
+        world a
+        better formatted place. Having grown up in an era where technology was evolving quickly has given me the
+        ability to use some systems without much experience.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-close waves-effect waves-green btn blue">Ok</a>
+    </div>
+  </div>
 
   <!-- Materialize JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

@@ -14,5 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Floating Action Buttons Activation
     var floaters = document.querySelectorAll('.fixed-action-btn');
-    M.FloatingActionButton.init(floaters, {});
+    M.FloatingActionButton.init(floaters, {direction: 'top'});
+
+    // Modals Activation
+    var windows = document.querySelectorAll('.modal');
+    M.Modal.init(windows, {});
+
 });
