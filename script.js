@@ -12,4 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var chipInterest = document.querySelectorAll('.chips');
     M.Chips.init(chipInterest, {});
     
+    // Floating Action Buttons Activation
+    var floaters = document.querySelectorAll('.fixed-action-btn');
+    M.FloatingActionButton.init(floaters, {});
 });
