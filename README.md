@@ -1,43 +1,44 @@
-# espoldi.github.io
+<span align="center">   
 
-This website is my current portfolio of all personal projects that I have made.
+# My Portfolio
 
-## Table of Contents
+[![badge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [Credits](#Credits)
-* [License](#License)
-* [Badges](#Badges)
-* [Contributing](#Contributing)
+</span>  
 
-## Installation
+## Table of Contents  
+*   [Description](#Description) 
+*   [Installation and Usage](#Installation-and-Usage)
+*   [Images of the app](#Images-of-the-app)
+*   [License](#License)
+*   [Contact](#Contact)
 
-To use, you must have GIT and VScode to edit.
 
-Then, clone the repository.
+## Description  
 
-    git clone https://github.com/espoldi/espoldi.github.io.git
+This website is designed to reflect the knowledge that I have accrued so far in my journey to be a great web developer.
+ 
+*   [Return to Top](#BigMood)  
 
-## Usage
+## Installation and Usage  
 
-This repository is for me to show you what I have been able to accomplish. Please use this as a way for new ideas to flourish and be shared with everyone.
+There is nothing to install. This site is used for reference to past projects.
 
-## Credits
+*   [Return to Top](#BigMood)  
 
-Resources Used
-* [Bootstrap](https://getbootstrap.com/)
-* [w3schools](https://www.w3schools.com/)
-* [placeholder](https://placeholder.com/)
+## License  
 
-## License
+Copyright (c) 2021 Emily Spoldi. This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.  
 
-[MIT](https://choosealicense.com/licenses/mit/)
+*   [Return to Top](#BigMood)  
 
-## Badges
+## Contact
 
-![badge](https://img.shields.io/badge/supported-100%25-blue?style=plastic)
+Contact Me at the following for more information or questions.
 
-## Contributing
+Github: https://www.github.com/espoldi
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Email: emily.l.spoldi@gmail.com
+
+*   [Return to Top](#BigMood)  
+---
