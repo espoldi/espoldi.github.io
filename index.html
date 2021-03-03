@@ -4,10 +4,6 @@
 <head>
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pompiere">
-
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Font Awesome -->
@@ -41,10 +37,10 @@
         <div class="background black">
           <img src="assets/images/abstract.jpg" height="100%">
         </div>
-        <a href="#user"><img class="center" src="assets/images/portrait.jpg" width="50%" style="border-radius: 5rem;"
-            alt="Profile Picture"></a>
-        <a href="#name"><span class="white-text name">Emily Spoldi</span></a>
-        <a href="#email"><span class="white-text email">emily.l.spoldi@gmail.com</span></a>
+        <img class="center" src="assets/images/portrait.jpg" width="50%" style="border-radius: 5rem;"
+          alt="Profile Picture">
+        <span class="white-text name">Emily Spoldi</span>
+        <span class="white-text email">emily.l.spoldi@gmail.com</span>
         <a href="https://www.linkedin.com/in/emily-spoldi/"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="https://www.github.com/espoldi"><i class="fab fa-github-square"></i> Github</a>
         <a>Copyright &copy; 2021 Emily Spoldi</a>
@@ -75,17 +71,19 @@
               </form>
             </span></div>
         </li>
-    <li>
-      <div class="divider"></div>
-    </li>
-    <li>
-      <ul>
-        <li class="tab"><a href="#recipeShopper">Recipe Shopper</a></li>
-        <li class="tab"><a href="#weatherForcast">Weather Forcast App</a></li>
-        <li class="tab"><a href="#popQuiz">Javascript Pop Quiz</a></li>
-      </ul>
-    </li>
-    
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li>
+          <ul>
+            <li class="tab"><a href="#bigMood">BigMood Mood Tracker</a></li>
+            <li class="tab"><a href="#employeeTracker">Employee Tracker Database</a></li>
+            <li class="tab"><a href="#recipeShopper">Recipe Shopper</a></li>
+            <li class="tab"><a href="#weatherForcast">Weather Forcast App</a></li>
+            <li class="tab"><a href="#popQuiz">Javascript Pop Quiz</a></li>
+          </ul>
+        </li>
+
       </ul>
     </li>
   </ul>
@@ -94,6 +92,32 @@
   <main class="container">
     <div class="row">
       <div class="col s12 m9 l10">
+
+        <div class="card" id="bigMood">
+          <div class="card-image">
+            <img class="responsive-img" src="..\espoldi.github.io\assets\images\bigmood.png"
+              href="https://bigmoodapp.herokuapp.com/" alt="BigMood Image">
+            <span>Recipe Shopper</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4 fab fa-github-alt"
+              href="https://github.com/espoldi/BigMood"></a>
+          </div>
+          <div class="card-content">
+            <p>The "BigMood" web app gives users an easy way to track their mood throughout the day. After they are asked to create an account, users will log in to the app and create a new entry where they are prompted to report how they are feeling on a 1-5 scale (their mood), and what their current activity is. They will also be presented with a randomly chosen inspirational quote. On subsequent logins, in addition to recording their current mood and activity, users will be able to view all past entries, see a graph displaying their average mood, view their most used activity, and change the theme of the app.</p>
+          </div>
+        </div>
+
+        <div class="card" id="employeeTracker">
+          <div class="card-image">
+            <img class="responsive-img" src="..\espoldi.github.io\assets\images\employeetracker.png" alt="Employee Tracker Image">
+            <span>Recipe Shopper</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4 fab fa-github-alt"
+              href="https://github.com/espoldi/EmployeeTracker"></a>
+          </div>
+          <div class="card-content">
+            <p>The following application uses a mixture of javascript, MySQL, and Inquirer to create a question driven CLI to keep track of your company team. It allows the user to input departments, roles, and employee information into a persistent database that is housed locally on the user's machine.</p>
+          </div>
+        </div>
+
         <div class="card" id="recipeShopper">
           <div class="card-image">
             <img class="responsive-img" src="..\espoldi.github.io\assets\images\recipeshopper.png"
@@ -152,8 +176,10 @@
   <div class="fixed-action-btn">
     <a class="btn-floating btn-large red"><i class="material-icons">account_circle</i></a>
     <ul>
-      <li><a class="btn-floating red modal-trigger" data-target="interests"><i class="material-icons">bubble_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1 modal-trigger" data-target="bio"><i class="material-icons">short_text</i>Bio</a></li>
+      <li><a class="btn-floating red modal-trigger" data-target="interests"><i
+            class="material-icons">bubble_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1 modal-trigger" data-target="bio"><i
+            class="material-icons">short_text</i>Bio</a></li>
     </ul>
   </div>
 
