@@ -11,8 +11,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // Chips Activation
     var chipInterest = document.querySelectorAll('.chips');
     M.Chips.init(chipInterest, {});
-
-    // Scrollspy Activation
-    var scrollFolio = document.querySelectorAll('.scrollspy');
-    M.ScrollSpy.init(scrollFolio, {});
+    
 });
