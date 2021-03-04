@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Side Navbar Collapsible Activation
     var sideCollapse = document.querySelectorAll('.collapsible');
-    M.Collapsible.init(sideCollapse, {});
+    M.Collapsible.init(sideCollapse, {
+        draggable: true,
+    });
 
     // Chips Activation
     var chipInterest = document.querySelectorAll('.chips');
