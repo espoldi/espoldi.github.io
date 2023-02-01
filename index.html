@@ -1,245 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-<head>
-  <!-- Materialize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Emily Spoldi || Home</title>
+  </head>
 
-  <title>Emily Spoldi || Home</title>
-</head>
-
-<body>
-  <!--Navigation Bar-->
-  <header>
-    <nav>
-      <div class="nav-wrapper grey darken-4">
-        <a href="#" class="brand-logo center">My Portfolio</a>
-        <a href="#" class="sidenav-trigger" data-target="slide-out"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Side Navigation Bar -->
-  <ul id="slide-out" class="sidenav sidenav-fixed center">
-    <li>
-      <div class="user-view">
-        <div class="background black">
-          <img src="assets/images/abstract.jpg" height="100%">
+  <body>
+    <!--Navigation Bar-->
+    <header>
+      <nav>
+        <div class="nav-wrapper grey darken-4">
+          <a href="#" class="brand-logo center">My Portfolio</a>
+          <a href="#" class="sidenav-trigger" data-target="slide-out"
+            ><i class="material-icons">menu</i></a
+          >
         </div>
-        <img class="center" src="assets/images/portrait.jpg" width="50%" style="border-radius: 5rem;"
-          alt="Profile Picture">
-        <span class="white-text name">Emily Spoldi</span>
-        <span class="white-text email">emily.l.spoldi@gmail.com</span>
-        <a href="https://www.linkedin.com/in/emily-spoldi/" class="btn-small grey darken-4" style="padding-left: 8px; padding-right: 8px; border-radius: 0.3rem;"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://www.github.com/espoldi" class="btn-small grey darken-4" style="padding-left: 8px; padding-right: 8px; border-radius: 0.3rem;"><i class="fab fa-github-square"></i> GitHub</a>
-        <br>
-        <a class="white-text">Copyright &copy; 2021 Emily Spoldi</a>
-      </div>
-    </li>
-    <li>
-      <ul class="collapsible">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">mail</i>Contact</div>
-          <div class="collapsible-body"><span>
-              <form action="mailto:emily.l.spoldi@gmail.com" method="post" enctype="text/plain">
-                <div class="form-group">
-                  <label for="nameInput">Name</label>
-                  <input type="text" class="form-control" id="nameInput" placeholder="Name">
-                </div>
+      </nav>
+    </header>
 
-                <div class="form-group">
-                  <label for="emailInput">Email</label>
-                  <input type="text" class="form-control" id="emailInput" placeholder="Email Address">
-                </div>
-
-                <div class="form-group">
-                  <label for="messageInput">Message</label>
-                  <textarea class="form-control" id="messageInput" placeholder="Message" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <br><br>
-              </form>
-            </span></div>
-        </li>
-        <li>
-          <div class="divider"></div>
-        </li>
-        <li>
-          <ul>
-            <li class="tab"><a href="#takeoff">TakeOff App</a></li>
-            <li class="tab"><a href="#bigMood">BigMood Mood Tracker</a></li>
-            <li class="tab"><a href="#employeeTracker">Employee Tracker Database</a></li>
-            <li class="tab"><a href="#recipeShopper">Recipe Shopper</a></li>
-            <li class="tab"><a href="#weatherForcast">Weather Forcast App</a></li>
-            <li class="tab"><a href="#popQuiz">Javascript Pop Quiz</a></li>
-          </ul>
-        </li>
-
-      </ul>
-    </li>
-  </ul>
-
-  <!-- Portfolio Projects -->
-  <main class="container">
-    <div class="row">
-      <div class="col s12 m10 offset-m1">
-
-        <div class="card" id="takeoff">
-          <div class="card-image">
-            <img class="responsive-img" src="./assets/images/takeoff.png"
-              alt="TakeOff Image">
-            <a class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
-              href="https://github.com/espoldi/Takeoff"><i class="material-icons fab fa-github-alt"></i></a>
+    <!-- Side Navigation Bar -->
+    <ul id="slide-out" class="sidenav sidenav-fixed center">
+      <li>
+        <div class="user-view">
+          <div class="background black">
+            <img src="assets/images/abstract.jpg" height="100%" />
           </div>
-          <div class="card-content">
-            <a class="card-title" href="https://takeoff123.herokuapp.com/">TakeOff</a>
-            <p>TakeOff is a travel planning and blog application. Users can keep track of current and past trips. The itinerary creator allows the user to keep track of planned events or outings. Since traffic and weather conditions can affect your plans, with a travel itinarary on hand you can be more flexible. Users can also create blogs of their favorite travel memories and list destinations for their future adventures.</p>
-          </div>
+          <img
+            class="center"
+            src="assets/images/portrait.jpg"
+            width="50%"
+            style="border-radius: 5rem"
+            alt="Profile Picture"
+          />
+          <span class="white-text name">Emily Spoldi</span>
+          <span class="white-text email">emily.l.spoldi@gmail.com</span>
+          <a
+            href="https://www.linkedin.com/in/emily-spoldi/"
+            class="btn-small grey darken-4"
+            style="padding-left: 8px; padding-right: 8px; border-radius: 0.3rem"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+          <a
+            href="https://www.github.com/espoldi"
+            class="btn-small grey darken-4"
+            style="padding-left: 8px; padding-right: 8px; border-radius: 0.3rem"
+            ><i class="fab fa-github-square"></i> GitHub</a
+          >
+          <br />
+          <a class="white-text">Copyright &copy; 2023 Emily Spoldi</a>
         </div>
+      </li>
+      <li>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">mail</i>Contact
+            </div>
+            <div class="collapsible-body">
+              <span>
+                <form
+                  action="mailto:emily.l.spoldi@gmail.com"
+                  method="post"
+                  enctype="text/plain"
+                >
+                  <div class="form-group">
+                    <label for="nameInput">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nameInput"
+                      placeholder="Name"
+                    />
+                  </div>
 
-        <div class="card" id="bigMood">
-          <div class="card-image">
-            <img class="responsive-img" src="./assets/images/bigmood.png"
-              alt="BigMood Image">
-            <a class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
-              href="https://github.com/espoldi/BigMood"><i class="material-icons fab fa-github-alt"></i></a>
-          </div>
-          <div class="card-content">
-            <a class="card-title" href="https://bigmoodapp.herokuapp.com/">BigMood Mood Tracker</a>
-            <p>The "BigMood" web app gives users an easy way to track their mood throughout the day. After they are asked to create an account, users will log in to the app and create a new entry where they are prompted to report how they are feeling on a 1-5 scale (their mood), and what their current activity is. They will also be presented with a randomly chosen inspirational quote. On subsequent logins, in addition to recording their current mood and activity, users will be able to view all past entries, see a graph displaying their average mood, view their most used activity, and change the theme of the app.</p>
-          </div>
-        </div>
-      
+                  <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="emailInput"
+                      placeholder="Email Address"
+                    />
+                  </div>
 
-        <div class="card" id="employeeTracker">
-          <div class="card-image">
-            <img class="responsive-img" src="./assets/images/employeetracker.png" alt="Employee Tracker Image">
-            <a class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
-              href="https://github.com/espoldi/EmployeeTracker"><i class="material-icons fab fa-github-alt"></i></a>
-          </div>
-          <div class="card-content">
-            <a class="card-title">Employee Tracker Database</a>
-            <p>The following application uses a mixture of javascript, MySQL, and Inquirer to create a question driven CLI to keep track of your company team. It allows the user to input departments, roles, and employee information into a persistent database that is housed locally on the user's machine.</p>
-          </div>
-        </div>
-
-        <div class="card" id="recipeShopper">
-          <div class="card-image">
-            <img class="responsive-img" src="./assets/images/recipeshopper.png"
-              alt="Recipe Shopper Image">
-            <a class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
-              href="https://github.com/espoldi/recipe-shopper"><i class="material-icons fab fa-github-alt"></i></a>
-          </div>
-          <div class="card-content">
-            <a class="card-title" href="https://espoldi.github.io/recipe-shopper">Recipe Shopper</a>
-            <p>The following project is a recipe search page that allows the user to search for recipes that use certain
-              ingredients and add the ingredients needed to make those recipes to a shopping list. It uses a css library
-              called picnic to provide a responsive layout. Using JQuery and local storage, we are able to take the
-              shopping list of ingredients and save it to the local computer so that the shopper doesn't have to worry
-              about their list being deleted if they refresh the page. We also use an API for some food trivia so that
-              each time a user goes to the site, they are presented with a little piece of knowledge about food that
-              they may not have known before.</p>
-          </div>
-        </div>
-
-        <div class="card" id="weatherForcast">
-          <div class="card-image">
-            <img class="responsive-img" src="./assets/images/weatherforcast.png"
-              alt="Weather Forcast Image">
-            <a class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
-              href="https://github.com/espoldi/weather"><i class="material-icons fab fa-github-alt"></i></a>
-          </div>
-          <div class="card-content">
-            <a class="card-title" href="https://espoldi.github.io/weather">Weather Forcast App</a>
-            <p>This application uses jquery and the open weather API to produce the current and future weather for a
-              city that the user inputs. It has a running history of past searches that the user can click on and
-              refresh that city and view again.</p>
-          </div>
-        </div>
-
-        <div class="card" id="popQuiz">
-          <div class="card-image">
-            <img class="responsive-img" src="./assets/images/popquiz.jpeg" alt="Pop Quiz Image">
-            <a class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
-              href="https://github.com/espoldi/pop-quiz"><i class="material-icons fab fa-github-alt"></i></a>
-          </div>
-          <div class="card-content">
-            <a class="card-title" href="https://espoldi.github.io/pop-quiz">Javascript Pop Quiz</a>
-            <p>My creation uses JQuery to make a short dynamic quiz about Javascript. By removing buttons from view, I
-              allow the rest of the program to use event listeners to test whether the answers are right or wrong.
-              Afterwards, using a prompt to get the initials of the user to generate a high scores section where you can
-              see who had which scores.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- Floating Button for more information -->
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red"><i class="material-icons">account_circle</i></a>
-    <ul>
-      <li><a class="btn-floating red modal-trigger" data-target="interests"><i
-            class="material-icons">bubble_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1 modal-trigger" data-target="bio"><i
-            class="material-icons">short_text</i>Bio</a></li>
+                  <div class="form-group">
+                    <label for="messageInput">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="messageInput"
+                      placeholder="Message"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <br /><br />
+                </form>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <ul>
+              <li class="tab"><a href="#takeoff">TakeOff App</a></li>
+              <li class="tab"><a href="#bigMood">BigMood Mood Tracker</a></li>
+              <li class="tab">
+                <a href="#employeeTracker">Employee Tracker Database</a>
+              </li>
+              <li class="tab"><a href="#recipeShopper">Recipe Shopper</a></li>
+              <li class="tab">
+                <a href="#weatherForcast">Weather Forcast App</a>
+              </li>
+              <li class="tab"><a href="#popQuiz">Javascript Pop Quiz</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
-  </div>
 
-  <!-- Modals of extra information -->
-  <div id="interests" class="modal">
-    <div class="modal-content">
-      <h4>Interests</h4>
-      <div class="chip"><img src="assets/images/icons/role-playing.png">D&D</div>
-      <div class="chip"><img src="assets/images/icons/game-controller.png">Gaming</div>
-      <div class="chip"><img src="assets/images/icons/cd.png">Music</div>
-      <div class="chip"><img src="assets/images/icons/books.png">Reading</div>
-      <div class="chip"><img src="assets/images/icons/groceries.png">Cooking</div>
-      <div class="chip"><img src="assets/images/icons/sale.png">Shopping</div>
-      <div class="chip"><img src="assets/images/icons/button.png">DIY Projects</div>
+    <!-- Portfolio Projects -->
+    <main class="container">
+      <div class="row">
+        <div class="col s12 m10 offset-m1">
+          <div class="card" id="takeoff">
+            <div class="card-image">
+              <img
+                class="responsive-img"
+                src="./assets/images/takeoff.png"
+                alt="TakeOff Image"
+              />
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
+                href="https://github.com/espoldi/Takeoff"
+                ><i class="material-icons fab fa-github-alt"></i
+              ></a>
+            </div>
+            <div class="card-content">
+              <a class="card-title" href="https://takeoff123.herokuapp.com/"
+                >TakeOff</a
+              >
+              <p>
+                TakeOff is a travel planning and blog application. Users can
+                keep track of current and past trips. The itinerary creator
+                allows the user to keep track of planned events or outings.
+                Since traffic and weather conditions can affect your plans, with
+                a travel itinarary on hand you can be more flexible. Users can
+                also create blogs of their favorite travel memories and list
+                destinations for their future adventures.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" id="bigMood">
+            <div class="card-image">
+              <img
+                class="responsive-img"
+                src="./assets/images/bigmood.png"
+                alt="BigMood Image"
+              />
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
+                href="https://github.com/espoldi/BigMood"
+                ><i class="material-icons fab fa-github-alt"></i
+              ></a>
+            </div>
+            <div class="card-content">
+              <a class="card-title" href="https://bigmoodapp.herokuapp.com/"
+                >BigMood Mood Tracker</a
+              >
+              <p>
+                The "BigMood" web app gives users an easy way to track their
+                mood throughout the day. After they are asked to create an
+                account, users will log in to the app and create a new entry
+                where they are prompted to report how they are feeling on a 1-5
+                scale (their mood), and what their current activity is. They
+                will also be presented with a randomly chosen inspirational
+                quote. On subsequent logins, in addition to recording their
+                current mood and activity, users will be able to view all past
+                entries, see a graph displaying their average mood, view their
+                most used activity, and change the theme of the app.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" id="employeeTracker">
+            <div class="card-image">
+              <img
+                class="responsive-img"
+                src="./assets/images/employeetracker.png"
+                alt="Employee Tracker Image"
+              />
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
+                href="https://github.com/espoldi/EmployeeTracker"
+                ><i class="material-icons fab fa-github-alt"></i
+              ></a>
+            </div>
+            <div class="card-content">
+              <a class="card-title">Employee Tracker Database</a>
+              <p>
+                The following application uses a mixture of javascript, MySQL,
+                and Inquirer to create a question driven CLI to keep track of
+                your company team. It allows the user to input departments,
+                roles, and employee information into a persistent database that
+                is housed locally on the user's machine.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" id="recipeShopper">
+            <div class="card-image">
+              <img
+                class="responsive-img"
+                src="./assets/images/recipeshopper.png"
+                alt="Recipe Shopper Image"
+              />
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
+                href="https://github.com/espoldi/recipe-shopper"
+                ><i class="material-icons fab fa-github-alt"></i
+              ></a>
+            </div>
+            <div class="card-content">
+              <a
+                class="card-title"
+                href="https://espoldi.github.io/recipe-shopper"
+                >Recipe Shopper</a
+              >
+              <p>
+                The following project is a recipe search page that allows the
+                user to search for recipes that use certain ingredients and add
+                the ingredients needed to make those recipes to a shopping list.
+                It uses a css library called picnic to provide a responsive
+                layout. Using JQuery and local storage, we are able to take the
+                shopping list of ingredients and save it to the local computer
+                so that the shopper doesn't have to worry about their list being
+                deleted if they refresh the page. We also use an API for some
+                food trivia so that each time a user goes to the site, they are
+                presented with a little piece of knowledge about food that they
+                may not have known before.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" id="weatherForcast">
+            <div class="card-image">
+              <img
+                class="responsive-img"
+                src="./assets/images/weatherforcast.png"
+                alt="Weather Forcast Image"
+              />
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
+                href="https://github.com/espoldi/weather"
+                ><i class="material-icons fab fa-github-alt"></i
+              ></a>
+            </div>
+            <div class="card-content">
+              <a class="card-title" href="https://espoldi.github.io/weather"
+                >Weather Forcast App</a
+              >
+              <p>
+                This application uses jquery and the open weather API to produce
+                the current and future weather for a city that the user inputs.
+                It has a running history of past searches that the user can
+                click on and refresh that city and view again.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" id="popQuiz">
+            <div class="card-image">
+              <img
+                class="responsive-img"
+                src="./assets/images/popquiz.jpeg"
+                alt="Pop Quiz Image"
+              />
+              <a
+                class="btn-floating halfway-fab waves-effect waves-light btn-large blue darken-4"
+                href="https://github.com/espoldi/pop-quiz"
+                ><i class="material-icons fab fa-github-alt"></i
+              ></a>
+            </div>
+            <div class="card-content">
+              <a class="card-title" href="https://espoldi.github.io/pop-quiz"
+                >Javascript Pop Quiz</a
+              >
+              <p>
+                My creation uses JQuery to make a short dynamic quiz about
+                Javascript. By removing buttons from view, I allow the rest of
+                the program to use event listeners to test whether the answers
+                are right or wrong. Afterwards, using a prompt to get the
+                initials of the user to generate a high scores section where you
+                can see who had which scores.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Floating Button for more information -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red"
+        ><i class="material-icons">account_circle</i></a
+      >
+      <ul>
+        <li>
+          <a class="btn-floating red modal-trigger" data-target="interests"
+            ><i class="material-icons">bubble_chart</i></a
+          >
+        </li>
+        <li>
+          <a
+            class="btn-floating yellow darken-1 modal-trigger"
+            data-target="bio"
+            ><i class="material-icons">short_text</i>Bio</a
+          >
+        </li>
+      </ul>
     </div>
-    <div class="modal-footer">
-      <a href="#" class="modal-close waves-effect waves-green btn blue">Ok</a>
+
+    <!-- Modals of extra information -->
+    <div id="interests" class="modal">
+      <div class="modal-content">
+        <h4>Interests</h4>
+        <div class="chip">
+          <img src="assets/images/icons/role-playing.png" />D&D
+        </div>
+        <div class="chip">
+          <img src="assets/images/icons/game-controller.png" />Gaming
+        </div>
+        <div class="chip"><img src="assets/images/icons/cd.png" />Music</div>
+        <div class="chip">
+          <img src="assets/images/icons/books.png" />Reading
+        </div>
+        <div class="chip">
+          <img src="assets/images/icons/groceries.png" />Cooking
+        </div>
+        <div class="chip">
+          <img src="assets/images/icons/sale.png" />Shopping
+        </div>
+        <div class="chip">
+          <img src="assets/images/icons/button.png" />DIY Projects
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="modal-close waves-effect waves-green btn blue">Ok</a>
+      </div>
     </div>
-  </div>
 
-  <div id="bio" class="modal">
-    <div class="modal-content">
-      <h4>Bio</h4>
-      <p>My name is Emily Spoldi. I am 28 years old and programming has had a heavy influence on my life since I
-        was little. My parents are both software engineers so technical jargon was common at the dinner table. I
-        was
-        the only one in my immediate family who decided to do something other than programming when deciding on
-        college majors... UNTIL NOW!<br>
-        <br>
-        I have spent a few years working with different schools and programs using what I have taught myself or
-        remember from my classes at SCSU and high school robotics team. Now, I am well on my way to making the
-        world a
-        better formatted place. Having grown up in an era where technology was evolving quickly has given me the
-        ability to use some systems without much experience.
-      </p>
+    <div id="bio" class="modal">
+      <div class="modal-content">
+        <h4>Bio</h4>
+        <p>
+          My name is Emily Spoldi. I am 28 years old and programming has had a
+          heavy influence on my life since I was little. My parents are both
+          software engineers so technical jargon was common at the dinner table.
+          I was the only one in my immediate family who decided to do something
+          other than programming when deciding on college majors... UNTIL
+          NOW!<br />
+          <br />
+          I have spent a few years working with different schools and programs
+          using what I have taught myself or remember from my classes at SCSU
+          and high school robotics team. Now, I am well on my way to making the
+          world a better formatted place. Having grown up in an era where
+          technology was evolving quickly has given me the ability to use some
+          systems without much experience.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="modal-close waves-effect waves-green btn blue">Ok</a>
+      </div>
     </div>
-    <div class="modal-footer">
-      <a href="#" class="modal-close waves-effect waves-green btn blue">Ok</a>
-    </div>
-  </div>
 
-  <!-- Materialize JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <!-- Custom Javascript -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- Custom Javascript -->
+    <script src="script.js"></script>
+  </body>
 </html>
